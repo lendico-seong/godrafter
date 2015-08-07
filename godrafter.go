@@ -13,6 +13,8 @@ import (
 	"unsafe"
 )
 
+// DrafterParse takes a API blueprint source and returns the parsed
+// result as a JSON.
 func DrafterParse(source []byte, flags int) ([]byte, error) {
 	var err error
 	var res unsafe.Pointer
